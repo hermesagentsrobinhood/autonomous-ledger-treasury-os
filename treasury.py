@@ -20,8 +20,12 @@ import urllib.request
 SOL_RPC = "https://api.mainnet-beta.solana.com"
 USDC_MINT = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 WRAPPED_SOL = "So11111111111111111111111111111111111111111"
+# Monad EVM network (Monad Metropolis hackathon track: Onchain Finance & Trading)
+MONAD_RPC = "https://rpc.monad.xyz"                 # QuickNode-backed, ~25 rps
+MONAD_USDC = "0x754704Bc059F8C67012fEd69BC8A327a5aafb603"  # Circle-native USDC on Monad
+MONAD_CHAINID = 143
 # CoinGecko ids for native tokens
-NATIVE_IDS = {"SOL": "solana", "ETH": "ethereum"}
+NATIVE_IDS = {"SOL": "solana", "ETH": "ethereum", "MON": "monad"}
 # SPL mints we recognize as USD-stable (illustrative; extend as needed)
 USD_STABLES = {USDC_MINT: "USDC"}
 KNOWN_SPL = {
@@ -61,10 +65,44 @@ def get_token_accounts(wallet):
     return out
 
 
+BALANCE_OF = "0x70a08231"  # balanceOf(address) selector
+DECIMALS = "0x313ce567"    # decimals() selector
+
+
+def evm_call(to, data):
+    """eth_call on Monad; returns raw 0x-hex result or raises."""
+    res = rpc(MONAD_RPC, "eth_call", [{"to": to, "data": data}, "latest"])
+    if "error" in res:
+        raise RuntimeError(f"eth_call error: {res['error']}")
+    return res.get("result", "0x0")
+
+
+def hex_to_uint(hexstr):
+    return int(hexstr, 16)
+
+
 def evm_balance(network, address):
-    """Parse an EVM address's (network, 0x..); expect caller to provide amounts."""
-    # Placeholder for parity with Solana path; EVM callers pass amounts via --evm-value
-    return {}
+    """Read USDC (ERC20) + native MON balances for an address on Monad mainnet.
+
+    Returns {kind: (amount_float, symbol)}.
+    """
+    out = {}
+    addr = address[2:].lower().rjust(64, "0")
+    # USDC balanceOf
+    try:
+        usdc_raw = evm_call(MONAD_USDC, BALANCE_OF + addr)
+        usdc_amt = hex_to_uint(usdc_raw) / 1e6
+        out["USDC"] = (usdc_amt, "USDC")
+    except Exception as e:
+        print(f"  [monad usdc error: {e}]", file=sys.stderr)
+    # native MON
+    try:
+        mon_full = rpc(MONAD_RPC, "eth_getBalance", [address, "latest"])
+        mon_amt = hex_to_uint(mon_full.get("result", "0x0")) / 1e18
+        out["MON"] = (mon_amt, "MON")
+    except Exception as e:
+        print(f"  [monad balance error: {e}]", file=sys.stderr)
+    return out
 
 
 def price_usd(symbols):
@@ -90,8 +128,9 @@ def main():
         else:
             sol_wallets.append(a)
 
-    prices = price_usd(["solana", "ethereum"])
+    prices = price_usd(["solana", "ethereum", "monad"])
     sol_price = (prices.get("solana") or {}).get("usd") or 0
+    mon_price = (prices.get("monad") or {}).get("usd") or 0
 
     rows = []
     grand_total = 0.0
@@ -104,10 +143,22 @@ def main():
         grand_total += sol_usd
         for mint, amt in accts.items():
             sym = KNOWN_SPL.get(mint, mint[:6])
-            # Only value USDC and SOL natively; unknown mints reported at 0 until priced
             usd = amt if mint == USDC_MINT else 0.0
             label = "USDC" if mint == USDC_MINT else f"SPL {sym}"
             rows.append((w, label, amt, usd))
+            grand_total += usd
+
+    # Monad EVM wallets
+    for w in evm:
+        bals = evm_balance("monad", w)
+        for kind, (amt, sym) in bals.items():
+            if kind == "USDC":
+                usd = amt
+            elif kind == "MON":
+                usd = amt * mon_price
+            else:
+                usd = 0.0
+            rows.append((w, f"{sym}(Monad)", amt, usd))
             grand_total += usd
 
     print("=" * 64)
