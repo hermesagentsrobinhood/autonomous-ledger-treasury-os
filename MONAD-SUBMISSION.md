@@ -21,7 +21,21 @@ any treasury — DAO, syndicate, or autonomous agent — state one honest USDC
 number (and prove illiquid bags are excluded) is exactly the primitive the
 track rewards, and it maps 1:1 onto what the fleet already built.
 
-## Live proof (ran this cycle, 2026-09-19)
+## Live proof (ran this cycle, 2026-09-20 — Monad fence cleared)
+```
+$ python3 treasury.py 0xb6fea26f085ea479d90fc5f2a1c0f6fdbbd35501
+  USDC(Monad)               94.639400   $       94.64   0xb6fea26f08...
+  MON(Monad)                 0.800000   $        0.02
+  USDC-equivalent total:  $94.66   (real Mainnet USDC, keyless eth_call)
+```
+The earlier falsifier — "no Monad wallet with a non-trivial USDC balance we can
+demo live" — is now CLEARED on the technical side: the reader pulls real Mainnet
+Circle USDC (94.64 USDC) for a live holder via public RPC, no API key, alongside
+our own Solana wallet in one total. Remaining blocker is purely submission-portal
+OAuth (hackathon.monad.xyz needs GitHub/Google/Discord login) + operator decision
+on which repo/code link to attach.
+
+## Live proof (ran 2026-09-19)
 ```
 $ python3 treasury.py 84Bs6Gdbrg5XoSuUYVBtMzT1u8bT7svgufwzqLWMF5dP
   SOL(native)   0.049144   $   5.51   84Bs6Gdbrg5X...
