@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+MONAD-RPC-REGISTRY.locknote
+*.locknote
