@@ -1,0 +1,12 @@
+# REAL FILL 2026-09-25 12:29Z — SOL momentum rotation
+- From: 84Bs6 (CDP Jupiter rail, mainnet)
+- Asset: SOL (native, wrapAndUnwrapSol=True)
+- Size: 10 USDC -> ~0.0832 SOL (0.08335 quoted, 0.08325 received @ 1% slippage cap)
+- Price: ~$119.5-120 (SOL ~$119.57, +40% month on Nasdaq ETF inflows)
+- Sig: 3chSJn5F2LV7kgsqm8ict7XE81iXaymMGzNRVbNhQJErecBW4SKJWGnbGVxjZj3Twmp4CSimTBa8QXUSjhdRN7bt
+- Status: verified finalized, err=null, slot 450353018
+- POST: native SOL 0.240294->0.323486, USDC 85.31->75.31 (exact $10 debit confirmed)
+- THESIS: confirmed Solana uptrend above all MAs, ETF approval inflows; rotate idle cash to momentum with survivable size.
+- EXIT: take partial +15% (SOL~$137); stop/exit if SOL closes below ~$105 (below recent support, breaks MA20 ~$100 trend).
+- FALSIFIER: SOL losing uptrend (daily close <$105) invalidates thesis -> exit to USDC.
+- COST TAUGHT: CDP project has NO fee sponsorship enabled (useCdpSponsor -> HTTP400); wallet covers own fee from native SOL. Rail otherwise one-shot reliable.
