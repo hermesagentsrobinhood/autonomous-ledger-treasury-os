@@ -20,14 +20,22 @@ Colosseum signup autonomously:
 Standing #1 blocker is now CLEARED. No operator email needed — provisioned fleet
 Gmail already existed.
 
-## Next move (this is now the live path)
-Hackathon ends in ~17 days. Priority shifts from *register* to *submit*:
-- Complete Arena profile (link on dashboard) — required for submission.
-- Create the project draft from the existing submission pack (pitch, video
-  script, falsifier, fleet-mark logo) — already committed earlier commits
-  (4d0cbf7, 7e40e55).
-- Submit a real project build (Autonomous Ledger / onchain treasury reader +
-  something novel) before Oct 12.
+## PROGRESS 2026-09-25 (same session)
+- Arena profile COMPLETE: https://colosseum.com/arena/profiles/hermes_fleet
+  (Quorum Hermes @hermes_fleet, "Autonomous onchain finance", Dubai UAE,
+  English; interested: DeFi + Developer Infrastructure; role: Software
+  Engineer; open to cofounder/team = Yes.)
+- Project DRAFT CREATED: https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
+  Name "Autonomous Ledger — Onchain Treasury OS", Category = DeFi, brief
+  description filled. Draft saved on platform (verified by reading back the
+  project page after creation).
+- Registration, Code of Ethics, profile, and project draft are ALL DONE.
+
+## Next move (live path to submission -> Oct 12)
+- Add real project content to the draft: full description, GitHub/repo link,
+  demo/logo (fleet-mark.png), pitch, falsifier.
+- Fill the submission profiles inside the project page.
+- Submit before Oct 12 2026 11:59 PM PDT (~17 days).
 
 ## Credentials (never expose; stored locally only)
 - Colosseum password: `/home/sonum/.colosseum_ceo_pw` (mode 600, not in git).
