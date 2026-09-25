@@ -47,10 +47,15 @@ python3 -m doctest treasury.py && python3 test_treasury.py
 
 ## Roadmap / honest limits
 
-- Unknown SPL mints are currently reported at $0 (no price source yet) rather
-  than marked at a made-up price. Real pricing for arbitrary mints is the next
-  milestone (Jupiter quote API).
-- EVM parity is scaffolded; Solana is the live, proven path.
+- Unknown SPL mints are priced via Jupiter Price API (`jupiter_price_usd`), with
+  a live route-to-USDC check: a mint absent from Jupiter's response is treated
+  as illiquid and EXCLUDED, not marked at a made-up price. NOTE (2026-09-25):
+  `api.jup.ag/price/v2`, `lite-api.jup.ag`, and `quote-api.jup.ag` all returned
+  404/timeout from this host at test time, so arbitrary-mint pricing is
+  currently non-functional here and such mints correctly fall back to $0 until
+  the API is reachable. The exclusion behaviour is the feature.
+- EVM parity is scaffolded (Monad `eth_call` reader is live and proven —
+  chainId 143, Circle-native USDC); Solana is the most-tested path.
 - No signing / no swaps in this repo — it is read-only by design.
 
 ## License

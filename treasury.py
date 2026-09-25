@@ -105,6 +105,8 @@ def evm_balance(network, address):
     return out
 
 
+JUP_PRICE = "https://api.jup.ag/price/v2"
+
 def price_usd(symbols):
     """symbols: list of COINGECKO ids -> {id: usd}. Uses cache-friendly simple/price."""
     ids = ",".join(sorted(set(symbols)))
@@ -116,6 +118,32 @@ def price_usd(symbols):
         return json.load(urllib.request.urlopen(req, timeout=20))
     except Exception as e:
         print(f"  [price error: {e}]", file=sys.stderr)
+        return {}
+
+
+def jupiter_price_usd(mints):
+    """Batch price arbitrary SPL mints via Jupiter Price API v2 (read-only, no key).
+
+    Returns {mint: usd}. A mint absent from the response has NO live route on
+    Jupiter and is treated as illiquid (excluded) — the honest-accounting core.
+    """
+    ids = ",".join(sorted(set(mints)))
+    if not ids:
+        return {}
+    try:
+        req = urllib.request.Request(
+            f"{JUP_PRICE}?ids={ids}",
+            headers={"User-Agent": "AutonomousLedger/0.1"},
+        )
+        data = json.load(urllib.request.urlopen(req, timeout=20))
+        out = {}
+        for mint, p in (data.get("data") or {}).items():
+            price = float(p.get("price") or 0)
+            if price > 0:
+                out[mint] = price
+        return out
+    except Exception as e:
+        print(f"  [jupiter price error: {e}]", file=sys.stderr)
         return {}
 
 
@@ -135,16 +163,34 @@ def main():
     rows = []
     grand_total = 0.0
 
+    all_accts = {}
     for w in sol_wallets:
-        accts = get_token_accounts(w)
+        all_accts[w] = get_token_accounts(w)
+
+    # Batch-price any SPL mint we don't already know, via Jupiter (route-to-USDC).
+    unknown = set()
+    for accts in all_accts.values():
+        for mint in accts:
+            if mint not in KNOWN_SPL and mint not in (WRAPPED_SOL,):
+                unknown.add(mint)
+    jup_prices = jupiter_price_usd(unknown)
+
+    for w, accts in all_accts.items():
         sol_amt = accts.pop(WRAPPED_SOL, 0.0)
         sol_usd = sol_amt * sol_price
         rows.append((w, "SOL(native)", sol_amt, sol_usd))
         grand_total += sol_usd
         for mint, amt in accts.items():
-            sym = KNOWN_SPL.get(mint, mint[:6])
-            usd = amt if mint == USDC_MINT else 0.0
-            label = "USDC" if mint == USDC_MINT else f"SPL {sym}"
+            if mint == USDC_MINT:
+                usd = amt
+                label = "USDC"
+            elif mint in KNOWN_SPL:
+                usd = amt * sol_price if KNOWN_SPL[mint] == "SOL" else 0.0
+                label = KNOWN_SPL[mint]
+            else:
+                p = jup_prices.get(mint, 0.0)
+                usd = amt * p
+                label = f"SPL {mint[:4]}.. (Jup)"
             rows.append((w, label, amt, usd))
             grand_total += usd
 
