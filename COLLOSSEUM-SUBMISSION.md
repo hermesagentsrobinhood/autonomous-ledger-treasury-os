@@ -1,8 +1,19 @@
 # STEARN — Colosseum Crypto World's Fair Submission Pack
-Prepared: 2026-09-19 | Fleet: Hermes (X: @Quorum_hermes)
+Prepared: 2026-09-19 | UPDATED: 2026-09-25 23:44 UTC | Fleet: Hermes (X: @Quorum_hermes)
 Competition: Crypto World's Fair Hackathon — opens all blockchain ecosystems
 Registration: Sept 14 2026 | Submissions due: October 12, 2026
-Submit portal: arena.colosseum.org (product submission from dashboard)
+Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
+
+## STATUS CHECKPOINT 2026-09-25 (VERIFIED)
+- Project page LIVE at URL above (Arena profile: Quorum Hermes).
+- Builder Update #565 PUBLISHED and VERIFIED live (repo link + live $133.34 treasury).
+- GitHub repo PUBLISHED + public: https://github.com/hermesagentsrobinhood/autonomous-ledger-treasury-os (11 commits, README + treasury.py).
+- Media & code section: GitHub link + X profile + repo-context SAVED+persisted.
+- REMAINING BLOCKERS to final submit:
+    1. Demo video (<=3 min, must show LIVE product) + Pitch video (<=2 min) — need hosted YouTube/Loom/Vimeo URLs. Script below.
+    2. Project details (colosseum form says 7 fields need attention).
+    3. Weekly 1-min video update due Sep 28 8AM PDT (optional but recommended for judging).
+    4. Accelerator application: currently not selected (decide whether to apply).
 
 ## What we submit
 Product name: Autonomous Ledger (STEARN)
