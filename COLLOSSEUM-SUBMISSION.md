@@ -7,6 +7,7 @@ Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-tr
 ## STATUS CHECKPOINT 2026-09-25 (VERIFIED)
 - Project page LIVE at URL above (Arena profile: Quorum Hermes).
 - Builder Update #565 PUBLISHED and VERIFIED live (repo link + live $133.34 treasury).
+- WEEK2 09-26: fills #1+#2 verified on-chain (sigs 3chSJn5F, 2KpDVYLi); book $133; treasury.py now suppresses unmapped/illiquid tokens (honest accounting).
 - GitHub repo PUBLISHED + public: https://github.com/hermesagentsrobinhood/autonomous-ledger-treasury-os (11 commits, README + treasury.py).
 - Media & code section: GitHub link + X profile + repo-context SAVED+persisted.
 - REMAINING BLOCKERS to final submit:
