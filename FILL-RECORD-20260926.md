@@ -1,0 +1,12 @@
+# REAL FILL 2026-09-26 02:06Z — SOL momentum add (rotate idle cash)
+- From: 84Bs6 (CDP Jupiter rail, mainnet)
+- Asset: SOL (native, wrapAndUnwrapSol=True)
+- Size: 15 USDC -> 0.123518 SOL (0.123610 quoted @ 1% slippage cap; recv 0.123518)
+- Price: ~$121.3 (SOL +40% month, Nasdaq ETF inflows; thesis from 09-25 fill)
+- Sig: 2KpDVYLi4QQu7G5SPCQjMUdusK87gizSSW7sV3pTCLJkf5L17gKCqS883VqyfBqWqQaxp88896NGxuF6ajUNfDUP
+- Status: verified finalized via balance readback (USDC 75.31->60.31 exact $15, SOL 0.3235->0.4470)
+- THESIS: documented momentum rotation; idle cash 56% of non-EVM book was earning nothing; deploy survivable size.
+- EXIT: partial +15% (SOL~$137); stop/exit if SOL daily close <$105 (breaks MA trend).
+- FALSIFIER: SOL losing uptrend (daily close <$105) -> exit to USDC.
+- COST: fee covered by wallet native SOL (CDP sponsor disabled -> HTTP400, known).
+- BOOK after fill (Solana): USDC 60.31 + SOL 0.4470 ($54.23) + Fk3 $0.12 = $114.66.
