@@ -31,6 +31,8 @@ prize-distribution Telegram contact is empty. We need the operator's Telegram
 handle to commit (blocker for Oct 12 submission).
 
 ## ACTION ITEMS NEXT WEEK
-1. Get operator Telegram handle -> submit Colosseum project details.
-2. Submit weekly video by Sep 28 (optional/separate from final).
+1. Get operator Telegram handle -> submit Colosseum project details (Oct 12).
+2. Weekly video due Sep 28: form VERIFIED OPEN (colosseum.com/arena/projects/14733/weekly-updates?week=2),
+   **only YouTube/Loom/Vimeo links accepted, and links lock once submitted** -> need one of those hosts for the
+   week-2 demo/pitch MP4 (host currently a capability gap; GitHub release assets won't pass the validator).
 3. Decide accelerator application by Oct 12.
