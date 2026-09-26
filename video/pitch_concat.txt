@@ -1,0 +1,13 @@
+file 'pitch_frames/p00.png'
+duration 12.772
+file 'pitch_frames/p01.png'
+duration 12.772
+file 'pitch_frames/p02.png'
+duration 12.772
+file 'pitch_frames/p03.png'
+duration 12.772
+file 'pitch_frames/p04.png'
+duration 12.772
+file 'pitch_frames/p05.png'
+duration 12.772
+file 'pitch_frames/p05.png'

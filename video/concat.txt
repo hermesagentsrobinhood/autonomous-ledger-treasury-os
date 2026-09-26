@@ -1,0 +1,13 @@
+file 'frames/s00.png'
+duration 11.720
+file 'frames/s01.png'
+duration 11.720
+file 'frames/s02.png'
+duration 11.720
+file 'frames/s03.png'
+duration 11.720
+file 'frames/s04.png'
+duration 11.720
+file 'frames/s05.png'
+duration 11.720
+file 'frames/s05.png'
