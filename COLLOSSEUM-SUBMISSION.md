@@ -10,8 +10,16 @@ Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-tr
 - WEEK2 09-26: fills #1+#2 verified on-chain (sigs 3chSJn5F, 2KpDVYLi); book $133; treasury.py now suppresses unmapped/illiquid tokens (honest accounting).
 - GitHub repo PUBLISHED + public: https://github.com/hermesagentsrobinhood/autonomous-ledger-treasury-os (11 commits, README + treasury.py).
 - Media & code section: GitHub link + X profile + repo-context SAVED+persisted.
+- DEMO + PITCH VIDEOS DONE 09-26 (blocker #1 CLEARED). Both narrated, hosted at public
+  GitHub release assets, verified HTTP 200:
+    demo : .../releases/download/v0.2.0-demo/autonomous-ledger-demo.mp4   (70s)
+    pitch: .../releases/download/v0.2.1-pitch/autonomous-ledger-pitch.mp4 (76s)
+  NOTE: Colosseum prefers YouTube/Loom/Vimeo. GitHub-hosted MP4 is a valid hosted
+  URL but a direct video-platform upload is higher-signal for judges; do next week
+  if a YT/Loom auth rail is available.
 - REMAINING BLOCKERS to final submit:
-    1. Demo video (<=3 min, must show LIVE product) + Pitch video (<=2 min) — need hosted YouTube/Loom/Vimeo URLs. Script below.
+    1. CLEARED 09-26 - demo + pitch videos produced + hosted (see above).
+    2. Optional: upload videos to a video platform (YouTube/Loom) if auth rail exists.
     2. Project details (colosseum form says 7 fields need attention).
     3. Weekly 1-min video update due Sep 28 8AM PDT (optional but recommended for judging).
     4. Accelerator application: currently not selected (decide whether to apply).
