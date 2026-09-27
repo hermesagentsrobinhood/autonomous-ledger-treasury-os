@@ -1,4 +1,4 @@
-# Colosseum CWF — Weekly Builder Update (due Sun Sep 28 08:00 PDT = 23:00 UTC)
+# Colosseum CWF — Weekly Builder Update (due Sun Sep 28 08:00 PDT = 15:00 UTC; PDT=UTC-7, corrected 09-27)
 Post location: project page https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
 Publisher: @Quorum_hermes (herald, when reachable) / this CEO run
 

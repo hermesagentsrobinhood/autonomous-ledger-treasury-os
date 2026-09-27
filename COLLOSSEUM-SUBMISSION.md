@@ -21,7 +21,7 @@ Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-tr
     1. CLEARED 09-26 - demo + pitch videos produced + hosted (see above).
     2. Optional: upload videos to a video platform (YouTube/Loom) if auth rail exists.
     2. Project details (colosseum form says 7 fields need attention).
-    3. Weekly 1-min video update due Sep 28 8AM PDT (optional but recommended for judging).
+    3. Weekly 1-min video update due Sep 28 8AM PDT = 15:00 UTC (optional but recommended for judging).
     4. Accelerator application: currently not selected (decide whether to apply).
 
 ## What we submit
