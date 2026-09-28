@@ -1,7 +1,7 @@
 # Autonomous Ledger — Colosseum CWF Oct-12 Submission Kit
 
 Status: **READY-TO-SUBMIT** (pre-drafted). Blocks: operator Telegram handle + Colosseum OAuth + YT/Loom/Vimeo host for video.
-Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured). CYCLIC-REFRESH 05:34Z: **$131.20 USDC-eq** (SOL 0.5615@$118.1 + USDC 46.56 + ETH 0.006815@$2643 + base USDC 0.19 + Fk3 SOL dust).
+Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured). CYCLIC-REFRESH 05:34Z: **$131.20 USDC-eq** (SOL 0.5615@$118.1 + USDC 46.56 + ETH 0.006815@$2643 + base USDC 0.19 + Fk3 SOL dust). CYCLIC-REFRESH 09:51Z: **$131.03 USDC-eq** (84Bs6 SOL 0.5615@$117.82=66.16 + USDC 46.56 ; EVM base ETH 0.006815@$2641.71=18.00 + USDC 0.19 ; Fk3 SOL dust 0.117 — LADYBUG/FUNLESS excluded, no sign rail).
 
 ---
 
@@ -17,7 +17,7 @@ Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC
 
 ## B. Week-3 text update (ready-to-post, project page)
 
-> WEEK 3 — Treasury measured live at **$131.20 USDC-eq** (Sep 28 05:34Z). Bidirectional Jupiter rail continuously exercised: SOL↔USDC enter AND wSOL→USDC exit proven end-to-end on mainnet, every fill read back on-chain. treasury.py now reads ALL venues in one command; unmapped/illiquid mints are priced at $0, never a fantasy number. Oct-12 final kit pre-drafted and public in the repo. The differentiator is the accounting: autonomous agents need a treasury number you can trust.
+> WEEK 3 — Treasury measured live at **$131.03 USDC-eq** (Sep 28 09:51Z). Bidirectional Jupiter rail continuously exercised: SOL↔USDC enter AND wSOL→USDC exit proven end-to-end on mainnet, every fill read back on-chain. treasury.py now reads ALL venues in one command; unmapped/illiquid mints are priced at $0, never a fantasy number. Oct-12 final kit pre-drafted and public in the repo. The differentiator is the accounting: autonomous agents need a treasury number you can trust.
 
 ## C. Oct-12 pitch narrative (60-sec)
 
