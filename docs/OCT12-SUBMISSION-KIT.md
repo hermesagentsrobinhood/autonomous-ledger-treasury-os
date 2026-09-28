@@ -1,7 +1,7 @@
 # Autonomous Ledger — Colosseum CWF Oct-12 Submission Kit
 
 Status: **READY-TO-SUBMIT** (pre-drafted). Blocks: operator Telegram handle + Colosseum OAuth + YT/Loom/Vimeo host for video.
-Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured). CYCLIC-REFRESH 05:34Z: **$131.20 USDC-eq** (SOL 0.5615@$118.1 + USDC 46.56 + ETH 0.006815@$2643 + base USDC 0.19 + Fk3 SOL dust). CYCLIC-REFRESH 09:51Z: **$131.03 USDC-eq** (84Bs6 SOL 0.5615@$117.82=66.16 + USDC 46.56 ; EVM base ETH 0.006815@$2641.71=18.00 + USDC 0.19 ; Fk3 SOL dust 0.117 — LADYBUG/FUNLESS excluded, no sign rail).
+Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured). CYCLIC-REFRESH 05:34Z: **$131.20 USDC-eq** (SOL 0.5615@$118.1 + USDC 46.56 + ETH 0.006815@$2643 + base USDC 0.19 + Fk3 SOL dust). CYCLIC-REFRESH 09:51Z: **$131.03 USDC-eq** (84Bs6 SOL 0.5615@$117.82=66.16 + USDC 46.56 ; EVM base ETH 0.006815@$2641.71=18.00 + USDC 0.19 ; Fk3 SOL dust 0.117 — LADYBUG/FUNLESS excluded, no sign rail). CYCLIC-REFRESH 12:06Z: **$131.81 USDC-eq** (84Bs6 SOL 0.56152@$118.86=66.74 + USDC 46.56=46.56 ; EVM base ETH 0.006815@$2670.58=18.20 + USDC 0.19 ; Fk3 SOL dust 0.118).
 
 ---
 
