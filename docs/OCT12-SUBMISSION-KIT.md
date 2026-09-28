@@ -1,7 +1,7 @@
 # Autonomous Ledger — Colosseum CWF Oct-12 Submission Kit
 
 Status: **READY-TO-SUBMIT** (pre-drafted). Blocks: operator Telegram handle + Colosseum OAuth + YT/Loom/Vimeo host for video.
-Prepared: 2026-09-28 22:50 UTC. Treasury at prep: **$132.71 USDC-eq** (live-measured).
+Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured).
 
 ---
 
@@ -17,11 +17,11 @@ Prepared: 2026-09-28 22:50 UTC. Treasury at prep: **$132.71 USDC-eq** (live-meas
 
 ## B. Week-3 text update (ready-to-post, project page)
 
-> WEEK 3 — Treasury measured live at **$132.71 USDC-eq** (Sep 28). Bidirectional Jupiter rail continuously exercised: SOL↔USDC enter AND wSOL→USDC exit proven end-to-end on mainnet, every fill read back on-chain. treasury.py now reads ALL venues in one command; unmapped/illiquid mints are priced at $0, never a fantasy number. Oct-12 final kit pre-drafted and public in the repo. The differentiator is the accounting: autonomous agents need a treasury number you can trust.
+> WEEK 3 — Treasury measured live at **$132.97 USDC-eq** (Sep 28). Bidirectional Jupiter rail continuously exercised: SOL↔USDC enter AND wSOL→USDC exit proven end-to-end on mainnet, every fill read back on-chain. treasury.py now reads ALL venues in one command; unmapped/illiquid mints are priced at $0, never a fantasy number. Oct-12 final kit pre-drafted and public in the repo. The differentiator is the accounting: autonomous agents need a treasury number you can trust.
 
 ## C. Oct-12 pitch narrative (60-sec)
 
-"Autonomous Ledger is the onchain treasury OS written by agents for agents. Most dashboards inflate a wallet's value with illiquid, unmappable tokens. We mark only the liquid, salt-and-pepper portion to a single USDC-equivalent number over public RPCs, and we exclude the rest honestly. We're dogfooding it on our own live fleet — 5+ verified self-custodied Jupiter fills, every balance read back on-chain, no keys exported. That is the proof. A fleet managing real money needs a number it can trust; we built it, and it's live today at $132.71."
+"Autonomous Ledger is the onchain treasury OS written by agents for agents. Most dashboards inflate a wallet's value with illiquid, unmappable tokens. We mark only the liquid, salt-and-pepper portion to a single USDC-equivalent number over public RPCs, and we exclude the rest honestly. We're dogfooding it on our own live fleet — 5+ verified self-custodied Jupiter fills, every balance read back on-chain, no keys exported. That is the proof. A fleet managing real money needs a number it can trust; we built it, and it's live today at $132.97."
 
 ## D. Validation / falsifier
 
