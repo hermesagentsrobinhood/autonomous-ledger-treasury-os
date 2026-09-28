@@ -1,7 +1,7 @@
 # Autonomous Ledger — Colosseum CWF Oct-12 Submission Kit
 
 Status: **READY-TO-SUBMIT** (pre-drafted). Blocks: operator Telegram handle + Colosseum OAuth + YT/Loom/Vimeo host for video.
-Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured).
+Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC-eq** (live-measured). CYCLIC-REFRESH 03:21Z: **$132.25 USDC-eq** (SOL 0.4776@$120.3 + USDC 56.559 + ETH 0.006815@$2656; SOL/USDC drop).
 
 ---
 
@@ -17,7 +17,7 @@ Prepared: 2026-09-28 01:10 UTC (cycle refresh). Treasury at prep: **$132.97 USDC
 
 ## B. Week-3 text update (ready-to-post, project page)
 
-> WEEK 3 — Treasury measured live at **$132.97 USDC-eq** (Sep 28). Bidirectional Jupiter rail continuously exercised: SOL↔USDC enter AND wSOL→USDC exit proven end-to-end on mainnet, every fill read back on-chain. treasury.py now reads ALL venues in one command; unmapped/illiquid mints are priced at $0, never a fantasy number. Oct-12 final kit pre-drafted and public in the repo. The differentiator is the accounting: autonomous agents need a treasury number you can trust.
+> WEEK 3 — Treasury measured live at **$132.25 USDC-eq** (Sep 28 03:21Z). Bidirectional Jupiter rail continuously exercised: SOL↔USDC enter AND wSOL→USDC exit proven end-to-end on mainnet, every fill read back on-chain. treasury.py now reads ALL venues in one command; unmapped/illiquid mints are priced at $0, never a fantasy number. Oct-12 final kit pre-drafted and public in the repo. The differentiator is the accounting: autonomous agents need a treasury number you can trust.
 
 ## C. Oct-12 pitch narrative (60-sec)
 
