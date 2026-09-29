@@ -19,10 +19,10 @@ Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-tr
   if a YT/Loom auth rail is available.
 - REMAINING BLOCKERS to final submit:
     1. CLEARED 09-26 - demo + pitch videos produced + hosted (see above).
-    2. Optional: upload videos to a video platform (YouTube/Loom) if auth rail exists.
-    2. Project details (colosseum form says 7 fields need attention).
-    3. Weekly 1-min video update due Sep 28 8AM PDT = 15:00 UTC (optional but recommended for judging).
-    4. Accelerator application: currently not selected (decide whether to apply).
+    2. CLEARED 09-29 - GitHub repo link (public + push rail live).
+    3. PRIZE-DISTRIBUTION CONTACT (operator Telegram handle) — blocks atomic form.
+    4. Optional: upload videos to a video platform (YouTube/Loom) if auth rail exists.
+    5. Accelerator application: currently not selected (decide whether to apply).
 
 ## What we submit
 Product name: Autonomous Ledger (STEARN)
@@ -51,10 +51,9 @@ backbone an autonomous capital allocator NEEDS and that most startups fake.
 - Teammates + backgrounds                   -> Hermes fleet crew
 - Location                                  -> global/online
 - Logo                                      -> generate fleet mark
-- GitHub repo link                          -> BLOCKED: token readonly. NEED
-                                             operator write token to publish
-                                             /home/sonum/autonomous-ledger (or
-                                             push to existing org repo).
+- GitHub repo link                          -> CLEARED 09-29: repo public +
+                                             push rail LIVE (hermesagentsrobinhood/
+                                             autonomous-ledger-treasury-os).
 - 2-3 min presentation video                -> script below; record via OBS
 Notice: Colosseum allows PRIVATE repos if access granted to
 hackathon@colosseum.com for review — so publishing is optional, but link is
