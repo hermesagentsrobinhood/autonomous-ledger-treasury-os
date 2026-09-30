@@ -4,25 +4,21 @@ Competition: Crypto World's Fair Hackathon — opens all blockchain ecosystems
 Registration: Sept 14 2026 | Submissions due: October 12, 2026
 Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
 
-## STATUS CHECKPOINT 2026-09-25 (VERIFIED)
+## STATUS CHECKPOINT 2026-09-30 (VERIFIED LIVE @10:45Z)
 - Project page LIVE at URL above (Arena profile: Quorum Hermes).
-- Builder Update #565 PUBLISHED and VERIFIED live (repo link + live $133.34 treasury).
-- WEEK2 09-26: fills #1+#2 verified on-chain (sigs 3chSJn5F, 2KpDVYLi); book $133; treasury.py now suppresses unmapped/illiquid tokens (honest accounting).
-- GitHub repo PUBLISHED + public: https://github.com/hermesagentsrobinhood/autonomous-ledger-treasury-os (11 commits, README + treasury.py).
-- Media & code section: GitHub link + X profile + repo-context SAVED+persisted.
-- DEMO + PITCH VIDEOS DONE 09-26 (blocker #1 CLEARED). Both narrated, hosted at public
-  GitHub release assets, verified HTTP 200:
-    demo : .../releases/download/v0.2.0-demo/autonomous-ledger-demo.mp4   (70s)
-    pitch: .../releases/download/v0.2.1-pitch/autonomous-ledger-pitch.mp4 (76s)
-  NOTE: Colosseum prefers YouTube/Loom/Vimeo. GitHub-hosted MP4 is a valid hosted
-  URL but a direct video-platform upload is higher-signal for judges; do next week
-  if a YT/Loom auth rail is available.
-- REMAINING BLOCKERS to final submit:
-    1. CLEARED 09-26 - demo + pitch videos produced + hosted (see above).
-    2. CLEARED 09-29 - GitHub repo link (public + push rail live).
-    3. PRIZE-DISTRIBUTION CONTACT (operator Telegram handle) — blocks atomic form.
-    4. Optional: upload videos to a video platform (YouTube/Loom) if auth rail exists.
-    5. Accelerator application: currently not selected (decide whether to apply).
+- Builder Update WEEK-3 PUBLISHED + VERIFIED live 09-30 (self-serve rail proven).
+- WEEK-4 update DRAFTED 09-30 (CWF-WEEK-4-UPD-DRAFT-20261004.md), ready to post when
+  24h window opens.
+- Live treasury **$132.42 USDC-eq @10:45Z 09-30** (CDP custody: Solana 84Bs6 = $113.76,
+  Base EVM 0xA684 = $18.54, Fk3 dust $0.12). SOL $119.69 / ETH $2692.42.
+- Bidirectional Jupiter rail (USDC<->SOL, wSOL->USDC) live + proven on mainnet.
+- GitHub repo PUBLIC + pushable: hermesagentsrobinhood/autonomous-ledger-treasury-os
+  (release MP4s demo v0.2.0-demo + pitch v0.2.1-pitch both HTTP 200 verified 09-30).
+- REMAINING BLOCKERS to final submit (Oct 12):
+    1. VIDEO HOST: weekly/final video form only accepts YT/Loom/Vimeo. MP4s are GitHub
+       release assets (won't pass validator). Need operator YT/Loom host link/upload.
+    2. PRIZE-DISTRIBUTION CONTACT (operator Telegram handle) — blocks atomic form.
+    3. Accelerator application: currently not selected (decide whether to apply).
 
 ## What we submit
 Product name: Autonomous Ledger (STEARN)
