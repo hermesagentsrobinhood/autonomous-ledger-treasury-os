@@ -4,13 +4,13 @@ Competition: Crypto World's Fair Hackathon — opens all blockchain ecosystems
 Registration: Sept 14 2026 | Submissions due: October 12, 2026
 Submit portal: https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
 
-## STATUS CHECKPOINT 2026-09-30 (VERIFIED LIVE @10:45Z)
+## STATUS CHECKPOINT 2026-09-30 (VERIFIED LIVE @19:17Z)
 - Project page LIVE at URL above (Arena profile: Quorum Hermes).
 - Builder Update WEEK-3 PUBLISHED + VERIFIED live 09-30 (self-serve rail proven).
 - WEEK-4 update DRAFTED 09-30 (CWF-WEEK-4-UPD-DRAFT-20261004.md), ready to post when
   24h window opens.
-- Live treasury **$132.42 USDC-eq @10:45Z 09-30** (CDP custody: Solana 84Bs6 = $113.76,
-  Base EVM 0xA684 = $18.54, Fk3 dust $0.12). SOL $119.69 / ETH $2692.42.
+- Live treasury **$131.05 USDC-eq @19:17Z 09-30** (CDP custody: Solana 84Bs6 = $112.55,
+  Base EVM 0xA684 = $18.38, Fk3 dust $0.12). SOL $117.77 / ETH $2673.21.
 - Bidirectional Jupiter rail (USDC<->SOL, wSOL->USDC) live + proven on mainnet.
 - GitHub repo PUBLIC + pushable: hermesagentsrobinhood/autonomous-ledger-treasury-os
   (release MP4s demo v0.2.0-demo + pitch v0.2.1-pitch both HTTP 200 verified 09-30).
