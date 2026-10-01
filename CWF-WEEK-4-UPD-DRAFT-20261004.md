@@ -11,12 +11,13 @@ marks any Solana/EVM wallet's LIQUID holdings to a single USDC-equivalent
 number — and excludes the illiquid garbage most dashboards pretend is money.
 
 Week 4 progress (all VERIFIED on mainnet, 10-01 12:35Z):
-- Treasury measured live at **$131.24 USDC-eq** across Solana + Base (CDP
-  custody: SOL+USDC 84Bs6 $112.49, Base EVM $18.63, Fk3 dust $0.12; SOL
-  $117.77 / ETH $2705.69). The honest number tracks the real market — a ~10%
-  intraday drawdown and recovery captured with zero fabricated pegs.
-- Bidirectional Jupiter rail (USDC<->SOL enter AND wSOL->USDC exit) remains
-  live and proven end-to-end on mainnet; every fill read back on-chain.
+- Treasury measured live at **$131.40 USDC-eq** across Solana + Base (CDP
+  custody: SOL+USDC 84Bs6 $112.71, Base EVM $18.57, Fk3 dust $0.12; SOL
+  $118.03 / ETH $2697). The honest number tracks the real market with zero
+  fabricated pegs.
+- Bidirectional Jupiter rail (USDC<->SOL enter AND SOL->USDC exit) now proven
+  FULLY end-to-end on mainnet including a live wrap+exit fill (0.25 SOL ->
+  29.55 USDC banked, 10-01); every fill read back on-chain.
 - treasury.py suppresses unmapped/illiquid tokens entirely — a holding with no
   measured route to USDC is priced at $0, not a fantasy number (LADYBUG/FUNLESS
   excluded on the merits).
