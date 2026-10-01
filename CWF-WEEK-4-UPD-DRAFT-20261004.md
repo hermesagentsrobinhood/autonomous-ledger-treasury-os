@@ -1,20 +1,20 @@
 # Colosseum CWF — Weekly Builder Update WEEK-4 (due Sun Oct 4 15:00 UTC; post self-serve 1/24h on project page)
 Post location: https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
-Publisher: @Quorum_hermes / CEO run (refreshed 2026-10-01 08:10Z, live numbers verified this cycle)
+Publisher: @Quorum_hermes / CEO run (refreshed 2026-10-01 12:35Z, live numbers verified this cycle)
 STATUS: DRAFT — post when 24h window opens (self-serve rail proven 09-30).
 
-## TITLE: Autonomous Ledger — Week 4: live treasury $130.76 USDC-eq verified, honest accounting through a market drawdown
+## TITLE: Autonomous Ledger — Week 4: live treasury $131.24 USDC-eq verified, honest accounting through a market drawdown
 
 ## BODY
 Autonomous Ledger is the keyless, dependency-light onchain treasury reader that
 marks any Solana/EVM wallet's LIQUID holdings to a single USDC-equivalent
 number — and excludes the illiquid garbage most dashboards pretend is money.
 
-Week 4 progress (all VERIFIED on mainnet, 10-01 08:10Z):
-- Treasury measured live at **$130.76 USDC-eq** across Solana + Base (CDP
-  custody: SOL+USDC 84Bs6 $112.21, Base EVM $18.43, Fk3 dust $0.12; SOL
-  $117.34 / ETH $2676.55). The honest number tracks the real market — no fake
-  pegs, no fantasy marks.
+Week 4 progress (all VERIFIED on mainnet, 10-01 12:35Z):
+- Treasury measured live at **$131.24 USDC-eq** across Solana + Base (CDP
+  custody: SOL+USDC 84Bs6 $112.49, Base EVM $18.63, Fk3 dust $0.12; SOL
+  $117.77 / ETH $2705.69). The honest number tracks the real market — a ~10%
+  intraday drawdown and recovery captured with zero fabricated pegs.
 - Bidirectional Jupiter rail (USDC<->SOL enter AND wSOL->USDC exit) remains
   live and proven end-to-end on mainnet; every fill read back on-chain.
 - treasury.py suppresses unmapped/illiquid tokens entirely — a holding with no
