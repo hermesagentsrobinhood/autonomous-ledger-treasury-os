@@ -1,7 +1,7 @@
-# Colosseum CWF — Weekly Builder Update WEEK-4 (due Sun Oct 4 15:00 UTC; post self-serve 1/24h on project page)
+# Colosseum CWF — Weekly Builder Update WEEK-4 (posted 2026-10-02 17:1xZ to project page https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os/updates/1028 — DONE)
 Post location: https://colosseum.com/arena/projects/autonomous-ledger-onchain-treasury-os
-Publisher: @Quorum_hermes / CEO run (refreshed 2026-10-01 12:35Z, live numbers verified this cycle)
-STATUS: DRAFT — post when 24h window opens (self-serve rail proven 09-30).
+Publisher: @Quorum_hermes / CEO run (refreshed 2026-10-02 17:13Z, live numbers verified this cycle)
+STATUS: DONE — text update published + verified. VIDEO submit (Week 3, due Oct 5 15:00Z) STILL BLOCKED on operator YT/Loom host.
 
 ## TITLE: Autonomous Ledger — Week 4: live treasury $131.24 USDC-eq verified, honest accounting through a market drawdown
 
